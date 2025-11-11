@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>888 Luxury Rentals - Premium Vehicle Hire</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#2C3E50">
+    
+    <!-- PWA iOS Support -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Luxury Rentals">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <h1 class="logo">888 Luxury Rentals</h1>
+            <p class="tagline">Premium Vehicles for Discerning Clients</p>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-link active" data-page="home">Home</a>
+            <a href="#cars" class="nav-link" data-page="cars">Hire Car</a>
+            <a href="#trucks" class="nav-link" data-page="trucks">Hire Truck</a>
+            <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+            <!-- ADMIN LINK REMOVED AS PER REQUIREMENTS -->
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            
+            <!-- Home Page -->
+            <section id="home-page" class="page active">
+                <div class="hero-section">
+                    <h2>Welcome to Luxury</h2>
+                    <p>Experience the finest vehicles with our exclusive rental service.<br>Premium quality, exceptional service.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <p>Premium Vehicles</p>
+                        </div>
+                        <div class="stat">
+                            <h3>1000+</h3>
+                            <p>Happy Clients</p>
+                        </div>
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="featured-vehicles">
+                    <h3>Featured Luxury Cars</h3>
+                    <div class="vehicle-grid">
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">🚗</div>
+                            <div class="vehicle-info">
+                                <h3>Mercedes-Benz S-Class</h3>
+                                <div class="vehicle-price">R2,500/day</div>
+                                <p>Ultimate luxury sedan with advanced features</p>
+                                <ul class="vehicle-features">
+                                    <li>Leather Seats</li>
+                                    <li>Panoramic Roof</li>
+                                    <li>Premium Sound</li>
+                                    <li>Heated Seats</li>
+                                </ul>
+                                <button class="btn book-btn" data-vehicle="Mercedes-Benz S-Class" data-price="2500">Book Now</button>
+                            </div>
+                        </div>
+                        
+                        <div class="vehicle-card">
+                            <div class="vehicle-image">🚙</div>
+                            <div class="vehicle-info">
+                                <h3>Range Rover Autobiography</h3>
+                                <div class="vehicle-price">R3,500/day</div>
+                                <p>The ultimate luxury SUV for any terrain</p>
+                                <ul class="vehicle-features">
+                                    <li>All-Terrain Capability</li>
+                                    <li>Executive Seats</li>
+                                    <li>Advanced Tow Assist</li>
+                                    <li>Premium Interior</li>
+                                </ul>
+                                <button class="btn book-btn" data-vehicle="Range Rover Autobiography" data-price="3500">Book Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hire Cars Page -->
+            <section id="cars-page" class="page">
+                <h2>Luxury Car Collection</h2>
+                <p>Choose from our premium selection of luxury vehicles</p>
+                
+                <div class="vehicle-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">🚗</div>
+                        <div class="vehicle-info">
+                            <h3>Mercedes-Benz S-Class</h3>
+                            <div class="vehicle-price">R2,500/day</div>
+                            <p>Ultimate luxury sedan with advanced features</p>
+                            <ul class="vehicle-features">
+                                <li>Leather Seats</li>
+                                <li>Panoramic Roof</li>
+                                <li>Premium Sound</li>
+                                <li>Heated Seats</li>
+                            </ul>
+                            <button class="btn book-btn" data-vehicle="Mercedes-Benz S-Class" data-price="2500">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">🚘</div>
+                        <div class="vehicle-info">
+                            <h3>BMW 7 Series</h3>
+                            <div class="vehicle-price">R2,300/day</div>
+                            <p>German engineering at its finest</p>
+                            <ul class="vehicle-features">
+                                <li>Executive Lounge</li>
+                                <li>Gesture Control</li>
+                                <li>Premium Sound</li>
+                                <li>Massage Seats</li>
+                            </ul>
+                            <button class="btn book-btn" data-vehicle="BMW 7 Series" data-price="2300">Book Now</button>
+                        </div>
+                    </div>
+                    
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">🏎️</div>
+                        <div class="vehicle-info">
+                            <h3>Porsche 911 Carrera</h3>
+                            <div class="vehicle-price">R4,200/day</div>
+                            <p>Iconic sports car performance and luxury</p>
+                            <ul class="vehicle-features">
+                                <li>Sport Chrono Package</li>
+                                <li>Active Suspension</li>
+                                <li>20-inch Wheels</li>
+                                <li>Premium Sound</li>
+                            </ul>
+                            <button class="btn book-btn" data-vehicle="Porsche 911 Carrera" data-price="4200">Book Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Hire Trucks Page -->
+            <section id="trucks-page" class="page">
+                <h2>34-Ton Truck & Trailer Rental</h2>
+                <p>Professional heavy-duty truck rentals with comprehensive packages</p>
+                
+                <div class="truck-info-card">
+                    <h3>📦 Complete Truck Rental Package - R110,000/month</h3>
+                    <div class="package-details">
+                        <h4>Package Includes:</h4>
+                        <ul>
+                            <li>✅ 34-Ton Truck & Trailer</li>
+                            <li>✅ GIT Insurance Covered</li>
+                            <li>✅ Mechanical Breakdown Coverage</li>
+                            <li>✅ Driver's Salary Included</li>
+                            <li>✅ Wear and Tear Coverage</li>
+                            <li>✅ Unlimited Kilometers</li>
+                            <li>✅ Operating throughout South Africa & Cross-border</li>
+                        </ul>
+                        
+                        <h4>Additional Services:</h4>
+                        <ul>
+                            <li>• Truck Pack: R5,000 per unit</li>
+                            <li>• Additional Driver: R15,000</li>
+                            <li>• Change of Route: R5,000</li>
+                            <li>• Admin Fee: R10,000 (non-refundable)</li>
+                        </ul>
+                        
+                        <h4>Terms & Conditions:</h4>
+                        <ul>
+                            <li>• Month-to-month contract</li>
+                            <li>• 100% payment upfront required</li>
+                            <li>• No security deposit</li>
+                            <li>• Compulsory inspection on delivery</li>
+                            <li>• Illegal loading prohibited</li>
+                            <li>• Weigh bridge slip required</li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-primary" onclick="openTruckInquiry()">Request Truck Quote</button>
+                </div>
+
+                <div class="vehicle-grid">
+                    <div class="vehicle-card">
+                        <div class="vehicle-image">🚛</div>
+                        <div class="vehicle-info">
+                            <h3>34-Ton Truck & Trailer</h3>
+                            <div class="vehicle-price">R110,000/month</div>
+                            <p>Heavy-duty commercial truck with full service package</p>
+                            <ul class="vehicle-features">
+                                <li>GIT Insurance Included</li>
+                                <li>Driver Salary Covered</li>
+                                <li>Mechanical Breakdown</li>
+                                <li>Unlimited Kilometers</li>
+                                <li>Cross-border Operation</li>
+                            </ul>
+                            <button class="btn book-btn" data-vehicle="34-Ton Truck & Trailer" data-price="110000" data-type="truck">Inquire Now</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Page -->
+            <section id="contact-page" class="page">
+                <h2>Contact Us</h2>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Get In Touch</h3>
+                        <div class="contact-item">
+                            <strong>Phone:</strong> +27 (555) 888-LUXURY
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong> info@888luxuryrentals.co.za
+                        </div>
+                        <div class="contact-item">
+                            <strong>Address:</strong> 123 Premium Avenue, Johannesburg
+                        </div>
+                        <div class="contact-item">
+                            <strong>Hours:</strong> 24/7 Service Available
+                        </div>
+                    </div>
+                    
+                    <form class="contact-form" id="contact-form">
+                        <h3>Send Message</h3>
+                        <input type="text" placeholder="Your Name" required id="contact-name">
+                        <input type="email" placeholder="Your Email" required id="contact-email">
+                        <input type="tel" placeholder="Your Phone" id="contact-phone">
+                        <select required id="contact-type">
+                            <option value="">Select Inquiry Type</option>
+                            <option value="car-booking">Car Booking</option>
+                            <option value="truck-booking">Truck Booking</option>
+                            <option value="info">General Information</option>
+                            <option value="support">Customer Support</option>
+                            <option value="other">Other</option>
+                        </select>
+                        <textarea placeholder="Your Message" rows="5" required id="contact-message"></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Admin Login Page -->
+            <section id="admin-login-page" class="page">
+                <div class="login-container">
+                    <h2>Admin Login</h2>
+                    <form id="admin-login-form">
+                        <div class="form-group">
+                            <label for="admin-username">Username:</label>
+                            <input type="text" id="admin-username" required placeholder="Enter admin username">
+                        </div>
+                        <div class="form-group">
+                            <label for="admin-password">Password:</label>
+                            <input type="password" id="admin-password" required placeholder="Enter password">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-large">Login</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Admin Dashboard Page -->
+            <section id="admin-page" class="page">
+                <div class="admin-header">
+                    <h2>Admin Dashboard</h2>
+                    <button class="btn btn-secondary" onclick="logoutAdmin()">Logout</button>
+                </div>
+
+                <div class="admin-stats">
+                    <div class="stat-card">
+                        <h3>Total Bookings</h3>
+                        <div class="stat-number" id="total-bookings">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Revenue</h3>
+                        <div class="stat-number" id="total-revenue">R0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pending Messages</h3>
+                        <div class="stat-number" id="pending-messages">0</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Active Users</h3>
+                        <div class="stat-number" id="active-users">0</div>
+                    </div>
+                </div>
+
+                <div class="admin-tabs">
+                    <button class="tab-btn active" onclick="openAdminTab('bookings')">Bookings</button>
+                    <button class="tab-btn" onclick="openAdminTab('messages')">Messages</button>
+                    <button class="tab-btn" onclick="openAdminTab('vehicles')">Manage Vehicles</button>
+                </div>
+
+                <!-- Bookings Tab -->
+                <div id="bookings-tab" class="admin-tab-content active">
+                    <h3>Recent Bookings</h3>
+                    <div id="bookings-container">
+                        <p>No bookings yet. Bookings will appear here.</p>
+                    </div>
+                </div>
+
+                <!-- Messages Tab -->
+                <div id="messages-tab" class="admin-tab-content">
+                    <h3>Customer Messages</h3>
+                    <div id="messages-container">
+                        <p>No messages yet. Customer inquiries will appear here.</p>
+                    </div>
+                </div>
+
+                <!-- Vehicles Tab -->
+                <div id="vehicles-tab" class="admin-tab-content">
+                    <h3>Manage Vehicles</h3>
+                    <form id="add-vehicle-form" class="vehicle-form">
+                        <h4>Add New Vehicle</h4>
+                        <input type="text" placeholder="Vehicle Name" required id="vehicle-name">
+                        <input type="number" placeholder="Daily Price (R)" required id="vehicle-price">
+                        <select required id="vehicle-type">
+                            <option value="car">Car</option>
+                            <option value="truck">Truck</option>
+                        </select>
+                        <textarea placeholder="Description" required id="vehicle-description"></textarea>
+                        <textarea placeholder="Features (comma separated)" required id="vehicle-features"></textarea>
+                        <input type="text" placeholder="Image URL" id="vehicle-image">
+                        <button type="submit" class="btn btn-primary">Add Vehicle</button>
+                    </form>
+                    
+                    <div class="vehicle-list">
+                        <h4>Current Vehicles</h4>
+                        <div id="vehicles-list">
+                            <!-- Vehicles will be loaded here -->
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Book Your Vehicle</h2>
+            <form id="booking-form">
+                <div class="form-group">
+                    <label>Vehicle:</label>
+                    <div id="booking-vehicle-info" class="vehicle-info"></div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-name">Your Name:</label>
+                    <input type="text" id="customer-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-email">Email:</label>
+                    <input type="email" id="customer-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="customer-phone">Phone:</label>
+                    <input type="tel" id="customer-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="start-date">Start Date:</label>
+                    <input type="date" id="start-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="end-date">End Date:</label>
+                    <input type="date" id="end-date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Total Cost:</label>
+                    <div id="total-cost" class="total-cost">R0</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">Confirm Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Truck Inquiry Modal -->
+    <div id="truck-inquiry-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Truck Rental Inquiry</h2>
+            <form id="truck-inquiry-form">
+                <div class="form-group">
+                    <label for="truck-customer-name">Your Name:</label>
+                    <input type="text" id="truck-customer-name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="truck-customer-email">Email:</label>
+                    <input type="email" id="truck-customer-email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="truck-customer-phone">Phone:</label>
+                    <input type="tel" id="truck-customer-phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="truck-customer-company">Company Name:</label>
+                    <input type="text" id="truck-customer-company" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rental-period">Rental Period (months):</label>
+                    <input type="number" id="rental-period" min="1" value="1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="additional-services">Additional Services Needed:</label>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" name="additional-services" value="truck-pack"> Truck Pack (R5,000)</label>
+                        <label><input type="checkbox" name="additional-services" value="additional-driver"> Additional Driver (R15,000)</label>
+                        <label><input type="checkbox" name="additional-services" value="cross-border"> Cross-border Operation</label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="truck-message">Additional Requirements:</label>
+                    <textarea id="truck-message" rows="4" placeholder="Tell us about your specific needs..."></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label>Estimated Total:</label>
+                    <div id="truck-total-cost" class="total-cost">R110,000</div>
+                </div>
+                
+                <button type="submit" class="btn btn-primary btn-large">Submit Inquiry</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content success">
+            <h2>Booking Confirmed! 🎉</h2>
+            <p>Your luxury vehicle has been reserved successfully.</p>
+            <div id="booking-details"></div>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Done</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+    <div class="container">
+        <p>&copy; 2024 888 Luxury Rentals. Powered by <strong>Quanta Tech</strong></p>
+        <p style="margin-top: 8px; font-size: 0.7rem; opacity: 0.6;">
+            <a id="staff-login-link" href="#admin-login" style="color: inherit; text-decoration: none;">Staff Login</a>
+        </p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
